@@ -1,14 +1,23 @@
 .main-nav {
-
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .left-nav > ul,
 .right-nav > ul {
-
+  display: flex;
+  align-items: center;
 }
 
 .left-nav > ul > li {
-
+	font-weight: bold;
+	padding: 7px;
+	border-radius: 7px 7px 7px 7px;
+	// transition:
+	font-family: $sans-serif;
+  font-variant: small-caps;
+  background-color: white;
 }
 
 .right-nav > ul > li {
@@ -16,19 +25,27 @@
 }
 
 .right-nav > ul > li:last-of-type {
-
+padding: 1px;
+border-radius: 7px 7px 7px 7px;
 }
 
 .left-nav > ul > li:hover,
 .right-nav > ul > li:last-of-type:hover {
-
+  background-color: $lightest-gray;
 }
 
 .left-nav span {
-
+  margin: 5px;
+  background-color: inherit;
 }
 
+.left-nav i {
+  background-color: inherit;
+}
 
 .right-nav i {
-
+  // color: black;
+  font-size: 20px;
+  margin: 5px;
+  background-color: inherit;
 }

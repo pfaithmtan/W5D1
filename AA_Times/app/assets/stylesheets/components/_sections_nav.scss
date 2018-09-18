@@ -1,0 +1,30 @@
+.section-nav {
+  font-family: $sans-serif;
+  border-bottom: 1px solid lightgrey;
+}
+
+.section-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.section-nav ul li {
+  margin: 10px 15px 10px 15px;
+}
+
+.section-nav ul li a{
+  color: black;
+}
+
+.section-nav > ul > li > a:hover {
+  background-color: $lightest-gray;
+}
+
+.section-nav > ul > li:last-of-type {
+  font-variant: small-caps;
+  font-size: 14px;
+}
+
+.section-nav > ul > li:last-of-type:hover {
+  text-decoration: underline;
+}

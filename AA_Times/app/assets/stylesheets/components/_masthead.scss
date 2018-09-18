@@ -4,6 +4,7 @@
 	align-items: center;
 	border-bottom: 2px solid black;
 	position: relative;
+  border-top: 1px solid $light-gray;
 }
 
 .language-nav {
@@ -18,7 +19,7 @@
 }
 
 .language-nav a {
-	margin: 0 5px;
+	margin: 3px 3px 0px 0px;
 	text-transform: uppercase;
 	font-family: $sans-serif;
 	font-size: 10px;
@@ -27,24 +28,52 @@
 
 .language-nav ul {
 	display: flex;
+  justify-content: center;
+}
+
+.language-nav ul > li{
+	display: flex;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+.language-nav > ul > li:first-of-type {
+  font-weight: bold;
+}
+
+.language-nav > ul > li > a {
+  text-decoration: none;
+}
+
+.language-nav > ul > li:hover{
+  text-decoration: underline;
 }
 
 .logo {
 	max-width: 400px;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .masthead-links {
-	display: flex;
 	font-family: $sans-serif;
 	font-size: 11px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
+.masthead-links ul {
+	display: flex;
+  align-items: center;
+}
+
 .masthead-links li {
 	margin-left: 10px;
+	padding-right: 10px;
 	border-right: 1px solid $light-gray;
+}
+
+.masthead-links li:last-of-type {
+  border: none;
 }
 
 .masthead-links button {
@@ -56,19 +85,30 @@
 }
 
 .masthead-links button:hover {
-	background-color: $lightest-gray;
+	text-decoration: underline;
 }
 
 .masthead-links a,
 .masthead-links button, 
 .masthead-links time {
 	margin-right: 10px;
+  color: black;
 }
 
 .masthead-links i {
 	margin-right: 5px;
 }
 
+.masthead-links a:hover {
+	text-decoration: underline;
+}
+
 .masthead-links strong {
 	color: green;
+}
+
+.masthead-links span:hover,
+.masthead-links strong:hover {
+  // color: lightgrey;
+  background-color: $lightest-gray;
 }
